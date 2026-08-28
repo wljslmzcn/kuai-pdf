@@ -1,0 +1,78 @@
+:root {
+  --primary: #5E6AD2;
+  --primary-light: #7B84E0;
+  --primary-bg: rgba(94, 106, 210, 0.08);
+  --success: #4CAF82;
+  --warning: #E5A15C;
+  --danger: #E25D5D;
+  --bg: #F2F2F7;
+  --card: #FFFFFF;
+  --text: #1D1D1F;
+  --text-secondary: #86868B;
+  --text-tertiary: #AEAEB2;
+  --border: rgba(0, 0, 0, 0.06);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+.dark {
+  --bg: #1C1C1E;
+  --card: #2C2C2E;
+  --text: #F5F5F7;
+  --text-secondary: #98989D;
+  --text-tertiary: #636366;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-tertiary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Element Plus 暗色模式覆盖 */
+.dark .el-table {
+  --el-table-bg-color: transparent !important;
+  --el-table-tr-bg-color: transparent !important;
+  --el-table-row-hover-bg-color: var(--primary-bg) !important;
+  --el-table-text-color: var(--text) !important;
+}
+
+.dark .el-dialog {
+  background: var(--card) !important;
+}
+
+.dark .el-input__wrapper,
+.dark .el-textarea__inner {
+  background: var(--card) !important;
+}
