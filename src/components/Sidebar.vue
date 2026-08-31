@@ -9,6 +9,12 @@ const emit = defineEmits<{
 
 const menuGroups = [
   {
+    title: '首页',
+    items: [
+      { id: 'home', label: '🏠 首页' },
+    ]
+  },
+  {
     title: '页面操作',
     items: [
       { id: 'page-ops', label: 'PDF 拆分' },

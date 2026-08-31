@@ -2,14 +2,20 @@
 import { ref } from 'vue'
 import Sidebar from './components/Sidebar.vue'
 import MainContent from './components/MainContent.vue'
+import Home from './components/Home.vue'
 
-const activeMenu = ref('page-ops')
+const activeMenu = ref('home')
+
+const navigate = (menuId: string) => {
+  activeMenu.value = menuId
+}
 </script>
 
 <template>
   <div class="app-container">
     <Sidebar :active-menu="activeMenu" @update:active-menu="activeMenu = $event" />
-    <MainContent :active-menu="activeMenu" />
+    <Home v-if="activeMenu === 'home'" @navigate="navigate" />
+    <MainContent v-else :active-menu="activeMenu" />
   </div>
 </template>
 

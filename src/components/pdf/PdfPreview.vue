@@ -83,6 +83,7 @@ watch(() => props.path, async (newPath) => {
   font-size: 14px;
   color: var(--text-secondary);
   padding: 20px;
+  text-align: center;
 }
 
 .preview-error {
