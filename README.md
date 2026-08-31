@@ -33,17 +33,14 @@
 - 元数据修改
 - 元数据清空
 
-### 五、OCR 识别
-- OCR 识别图片文字（需要安装 Tesseract）
-
-### 六、批量处理
+### 五、批量处理
 - 批量压缩
 - 批量加密
 
-### 七、高级功能
+### 六、高级功能
 - 查看 PDF 信息
 
-### 八、工具
+### 七、工具
 - 任务队列
 - 操作日志
 
@@ -94,8 +91,7 @@ kuai-pdf/
 │   │   ├── page_ops.rs    # 页面操作
 │   │   ├── converter.rs   # 格式转换
 │   │   ├── editor.rs      # PDF 编辑
-│   │   ├── security.rs    # 安全与权限
-│   │   └── ocr.rs         # OCR 识别
+│   │   └── security.rs    # 安全与权限
 │   ├── Cargo.toml         # Rust 依赖
 │   └── tauri.conf.json    # Tauri 配置
 └── package.json
@@ -103,14 +99,9 @@ kuai-pdf/
 
 ## 注意事项
 
-1. **OCR 功能**：需要安装 Tesseract OCR 引擎
-   - Windows: 下载安装 https://github.com/UB-Mannheim/tesseract/wiki
-   - macOS: `brew install tesseract`
-   - Linux: `sudo apt install tesseract-ocr`
+1. **图片转 PDF**：支持 PNG、JPG、BMP 格式
 
-2. **图片转 PDF**：支持 PNG、JPG、BMP 格式
-
-3. **加密功能**：使用 PDF 标准加密算法
+2. **加密功能**：使用 PDF 标准加密算法（RC4 128位）
 
 ## 技术栈
 
