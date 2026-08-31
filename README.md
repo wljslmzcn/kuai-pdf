@@ -13,6 +13,14 @@
 
 [下载安装](#-安装) · [功能特性](#-功能模块) · [开发指南](#-开发) · [反馈问题](https://github.com/wljslmzcn/kuai-pdf/issues)
 
+<br/>
+
+<p align="center">
+  <img src="public/wechat.jpg" width="120" alt="公众号二维码" />
+  <br/>
+  <strong>关注公众号「网络技术联盟站」回复「加群」加入沟通群</strong>
+</p>
+
 </div>
 
 ---
@@ -180,6 +188,8 @@ npm run lint               # ESLint 检查
 本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
 
 ---
+
+> 本软件由公众号「网络技术联盟站」开发
 
 <div align="center">
 
